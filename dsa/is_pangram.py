@@ -8,12 +8,10 @@ Complexity: O(N)
 import sys
 import os
 
-    # A function to check if a string is Pangram or not.
-    def checkIfPangram(self, s):
-
 class Solution:
     
-    def checkIfPangram(self,s):
+    # A function to check if a string is Pangram or not.
+    def checkIfPangram(self, s):
         
         alpha_chars = {}
         

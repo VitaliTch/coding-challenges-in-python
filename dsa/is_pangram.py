@@ -2,16 +2,18 @@
 """
 A solution to the 'pangram' challenge implemented in Python3.
 Complexity: O(N)
-
 @author Vitali Tchalov
 """
+
 import sys
 import os
 
-class Solution:
-    
     # A function to check if a string is Pangram or not.
     def checkIfPangram(self, s):
+
+class Solution:
+    
+    def checkIfPangram(self,s):
         
         alpha_chars = {}
         

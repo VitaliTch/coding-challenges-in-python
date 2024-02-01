@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 """
-A solution to the 'panagram' challenge implemented in Python3.
+A solution to the 'pangram' challenge implemented in Python3.
+Complexity: O(N)
 @author Vitali Tchalov
 """
+
 import sys
 import os
 
-#User function Template for python3
+    # A function to check if a string is Pangram or not.
+    def checkIfPangram(self, s):
 
 class Solution:
     
-    #Function to check if a string is Pangram or not.
     def checkIfPangram(self,s):
-        #code here
         
         alpha_chars = {}
         
@@ -29,15 +30,17 @@ class Solution:
 
 def main():
     tests = [
-            "not pangram", \
+            "Short not pangram text", \
             "A sentence longer than 26 characters but it is not a pangram.", \
-            "The quick brown fox jumps over the lazy dog" \
+            "1. The quick brown fox jumps over the lazy dog.", \
+            "2. Sphinx of black quartz, judge my vow.", \
+            "3. Pack my box with five dozen liquor jugs."
     ]
 
     obj = Solution()
 
     for s in tests:
-        print("Checking if string '" + s + "' for being a pangram. String length is ", len(s), ".")
+        print("Checking a text of length ", len(s))
 
         if (obj.checkIfPangram(s)):
             print("'" + s + "' IS a pangram.")

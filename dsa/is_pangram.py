@@ -2,7 +2,7 @@
 """
 A solution to the 'pangram' challenge implemented in Python3.
 Complexity: O(N)
-@author Vitali Tchalov
+@author Vitali Tchalov https://github.com/VitaliTch
 """
 
 import sys
